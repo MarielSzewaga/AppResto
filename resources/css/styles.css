@@ -1,0 +1,12 @@
+@import url('reset.css');
+@import url('colores.css');
+:root{
+    --alturaHeader: 240px;
+}
+header{
+    height: var(--alturaHeader);
+     background-color: rgb(255, 0, 191);
+}
+main{
+    min-height: calc(100dvh - var(--alturaHeader));
+    background-color: red;}   /* var(--color-primario);}
