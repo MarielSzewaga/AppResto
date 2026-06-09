@@ -1,12 +1,78 @@
 @import url('reset.css');
 @import url('colores.css');
+
 :root{
     --alturaHeader: 240px;
 }
-header{
-    height: var(--alturaHeader);
-     background-color: rgb(255, 0, 191);
+
+header {
+   position: relative;
+   height: var(--alturaHeader);
+   background-color: rgb(194, 194, 245);
 }
-main{
-    min-height: calc(100dvh - var(--alturaHeader));
-    background-color: red;}   /* var(--color-primario);}
+.textoBienvenida {
+    position: absolute;
+    bottom: 50px;
+    width: 90%;
+    left: 5%;
+}
+.buscador {
+    display: flex;
+    position: absolute;
+    bottom:-30px;
+    right: 10%;
+
+    height: 60px;
+    width: 80%;
+    background-color: rgb(84, 103, 131);
+        input[type="text"]{
+            flex:1;
+            height: 100%;
+            padding: 0 20px;
+
+            
+          }
+
+        i{
+            width: 60px;
+            height: 60px;
+            display: grid;
+            place-items: center;
+            background-color: rgb(255, 255, 255);
+          }
+
+
+
+        button{
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        background-color: rgb(255, 255, 255);
+        }
+
+
+
+
+
+}
+
+
+
+
+
+main {
+    min-height: calc(100dvh - var(-- --alturaHeader)); /*hace que el main ocupe el espacio restante de la pantalla*/
+    background-color: rgb(241, 167, 167);
+}
+
+.categorias {
+    height: 80px;
+    background-color: rgb(226, 138, 138);
+}
+
+.tiendas{
+    min-height: 300px;
+    background-color: rgb(143, 198, 223);
+}
+
